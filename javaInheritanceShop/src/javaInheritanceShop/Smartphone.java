@@ -23,4 +23,13 @@ public class Smartphone extends Prodotto{
 	public int getCodiceImei() {
 		return codiceImei;
 	}
+
+	@Override
+	public String toString() {
+		return super.toString() +"Smartphone codiceImei=" + codiceImei + ", "
+				+ "quantitaMemoria=" + quantitaMemoria + "";
+	}
+	
+	
+	
 }

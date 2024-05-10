@@ -72,6 +72,13 @@ public class Prodotto {
 	public void setMarca(String marca) {
 		this.marca = marca;
 	}
+
+	@Override
+	public String toString() {
+		return "Prodotto codice=" + codice + ", nome=" + nome + ", "
+				+ "descrizione=" + descrizione + ", marca=" + marca
+				+ ", prezzo=" + prezzo + ", random=" + random + "";
+	}
 	
 	
 }

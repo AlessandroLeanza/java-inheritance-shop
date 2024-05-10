@@ -42,6 +42,14 @@ public class Cuffie extends Prodotto{
 	public void setCuffieCablate(String cuffieCablate) {
 		this.cuffieCablate = cuffieCablate;
 	}
+
+	@Override
+	public String toString() {
+		return super.toString() +"Cuffie colore=" + colore + ", "
+				+ "cuffieWireless=" + cuffieWireless + ", cuffieCablate=" + cuffieCablate
+				+ "";
+	}
+	
 	
 	
 }
