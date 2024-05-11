@@ -23,32 +23,41 @@ public class Carrello {
 		
 		String valorizzazione = scan.nextLine();
 		
-		Prodotto p = null;
+//		Prodotto p = null;
 		
 		switch (valorizzazione) {
 		
 		case "smartphone": 
 			
-			p = new Smartphone("", "", 0, "", 0, 0);
-			p.setMarca("Apple");
-			p.setNome("Iphone");
-			p.setPrezzo(1200);
+			Prodotto smartphone = new Smartphone("", "", 0, "", 0, 0);
+			
+			//p = new Smartphone("", "", 0, "", 0, 0);
+			smartphone.setMarca("Apple");
+			smartphone.setNome("Iphone");
+			smartphone.setPrezzo(1200);
+			System.out.println(smartphone);
 			break;
 			
 		case "televisori":
 			
-			p = new Televisori("", "", 0, "", 0, false);
-			p.setMarca("Samsung");
-			p.setNome("Smart Tv");
-			p.setPrezzo(600);
+			Prodotto televisori = new Televisori("", "", 0, "", 0, false);
+			
+			//p = new Televisori("", "", 0, "", 0, false);
+			televisori.setMarca("Samsung");
+			televisori.setNome("Smart Tv");
+			televisori.setPrezzo(600);
+			System.out.println(televisori);
 			break;
 			
 		case "cuffie":
 			
-			p = new Cuffie ("", "", 0, "", "", "", "");
-			p.setMarca("Apple");
-			p.setNome("Apple air3");
-			p.setPrezzo(350);
+			Prodotto cuffie = new Cuffie("", "", 0, "", "", "", "");
+			
+			//p = new Cuffie ("", "", 0, "", "", "", "");
+			cuffie.setMarca("Apple");
+			cuffie.setNome("Apple air3");
+			cuffie.setPrezzo(350);
+			System.out.println(cuffie);
 			break;
 			
 		default:
@@ -56,45 +65,45 @@ public class Carrello {
 			
 		}
 		
-		Prodotto prodotto = new Prodotto("", "", 0, "");
-		
-		prodotto.setMarca("Generico");
-		prodotto.setNome("Generico");
-		prodotto.setPrezzo(0);
-		
-		System.out.println(prodotto);
-		
-		Prodotto smartphone = new Smartphone("", "", 0, "", 0, 0);
-		
-		smartphone.setMarca("Apple");
-		smartphone.setNome("Iphone");
-		smartphone.setPrezzo(1200);
-		
-		System.out.println(smartphone);
-		
-		Prodotto televisori = new Televisori("", "", 0, "", 0, false);
-	
-		televisori.setMarca("Samsung");
-		televisori.setNome("Smart Tv");
-		televisori.setPrezzo(600);
-		
-		System.out.println(televisori);
-		
-		Prodotto cuffie = new Cuffie("", "", 0, "", "", "", "");
-		
-		cuffie.setMarca("Apple");
-		cuffie.setNome("Apple air3");
-		cuffie.setPrezzo(350);
-		
-		System.out.println(cuffie);
-		
+//		Prodotto prodotto = new Prodotto("", "", 0, "");
+//		
+//		prodotto.setMarca("Generico");
+//		prodotto.setNome("Generico");
+//		prodotto.setPrezzo(0);
+//		
+//		System.out.println(prodotto);
+//		
+//		Prodotto smartphone = new Smartphone("", "", 0, "", 0, 0);
+//		
+//		smartphone.setMarca("Apple");
+//		smartphone.setNome("Iphone");
+//		smartphone.setPrezzo(1200);
+//		
+//		System.out.println(smartphone);
+//		
+//		Prodotto televisori = new Televisori("", "", 0, "", 0, false);
+//	
+//		televisori.setMarca("Samsung");
+//		televisori.setNome("Smart Tv");
+//		televisori.setPrezzo(600);
+//		
+//		System.out.println(televisori);
+//		
+//		Prodotto cuffie = new Cuffie("", "", 0, "", "", "", "");
+//		
+//		cuffie.setMarca("Apple");
+//		cuffie.setNome("Apple air3");
+//		cuffie.setPrezzo(350);
+//		
+//		System.out.println(cuffie);
+//		
 	}
 
-	@Override
-	public String toString() {
-		return "Carrello getClass()=" + getClass() + ", hashCode()=" + hashCode() + 
-				", toString()=" + super.toString()
-				+ "";
-	}
+//	@Override
+//	public String toString() {
+//		return "Carrello getClass()=" + getClass() + ", hashCode()=" + hashCode() + 
+//				", toString()=" + super.toString()
+//				+ "";
+//	}
 
 }
